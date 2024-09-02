@@ -26,31 +26,31 @@ const TempAndDetail = ({weather: {
             id: 3,
             Icon: FiWind,
             title: "Wind",
-            value: `${speed.toFixed()} km/h`
+            value: `${speed.toFixed()} m/s`
         }
     ]
 
     const weatherDetail = [
         {
-            id: 1,
+            id: 4,
             Icon: GiSunrise,
             title: "Sunrise",
             value: sunrise,
         },
         {
-            id: 2,
+            id: 5,
             Icon: GiSunset,
             title: "Sunset",
             value: sunset,
         },
         {
-            id: 3,
+            id: 6,
             Icon: MdKeyboardArrowUp,
             title: "High",
             value: `${temp_max.toFixed()}°`
         },
         {
-            id: 3,
+            id: 7,
             Icon: MdKeyboardArrowDown,
             title: "Low",
             value: `${temp_min.toFixed()}°`

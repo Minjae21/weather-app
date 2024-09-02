@@ -14,21 +14,29 @@ const App = () => {
   const [weather, setWeather] = useState(null)
 
   const getWeather = async () => {
-    await getFormattedWeatherData({ ...query, units }).then( data => {
-      setWeather(data)
-    });
-    console.log(data);
-  };
+    try {
+        const data = await getFormattedWeatherData({ ...query, units });
+        setWeather(data);
+    } catch (error) {
+        console.error("Failed to fetch weather data:", error);
+    }
+};
 
   useEffect(() => { getWeather();
   }, [query, units]);
 
-  getWeather();
+  const formatBg = () => {
+    if (!weather) return 'from-cyan-600 to-blue-700'
+    const threshold = units === 'metric' ? 20 : 60
+    if (weather.temp <= threshold) return 'from-cyan-600 to-blue-700'
+    return 'from-yellow-600 to-orange-700'
+  }
 
   return (
-    <div className = "mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br shadow-xl shadow-gray-400 from-cyan-600 to-blue-700">
-      <TopButton />
-      <Input />
+    <div className = {`mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br shadow-xl
+      shadow-gray-400 ${formatBg()}`}>
+      <TopButton setQuery = {setQuery} />
+      <Input setQuery = {setQuery} setUnits = {setUnits} />
 
       { weather && (
         <>
