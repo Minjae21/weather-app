@@ -1,8 +1,17 @@
-# React + Vite
+# Weather Forecast App
+Weather Forecasting Application created by [Minjae Jang](https://minjae21.github.io/index.html)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How It's Made:
+- **HTML**: The structure of the application is defined using HTML.
 
-Currently, two official plugins are available:
+- **CSS**: The appearance and basic layout of the app (Tailwind CSS)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **JavaScript**: The app logic and interactivity are implemented using JavaScript.
+
+## Features:
+  - Real-time Weather Updates
+  - Countdown timer to track the 200-second limit.
+  - Visual indicators for correct and misplaced letters.
+
+<img src="IMG/cel.png" alt="Celsius" width="650">
+<img src="IMG/fa.png" alt="Fahrenheit" width="650">
