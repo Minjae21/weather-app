@@ -24,8 +24,8 @@ Weather Forecasting Application created by [Minjae Jang](https://minjae21.github
   - Get the most up-to-date weather information for your location or any other city worldwide.
   - Weather data includes temperature, humidity, and wind speed.
 
-**2. 7-Day 3-Hour Forecast**
-  - View a comprehensive 7-day and 3-hour weather forecast.
+**2. 5-Day 3-Hour Forecast**
+  - View a comprehensive 5-day and 3-hour weather forecast.
   - Detailed daily information on temperature highs and lows, and other detailed weather conditions.
 
 **3. Location-based Forecasting**
