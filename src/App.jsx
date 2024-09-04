@@ -1,3 +1,6 @@
+// Weather Forecasting Application
+// Developed by Minjae Jang 9/4/2024
+
 import TopButton from "./components/TopButton"
 import Input from "./components/Input"
 import TimeAndLocation from "./components/TimeAndLocation"
